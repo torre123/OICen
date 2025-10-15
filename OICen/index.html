@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OICen - Olimpiada Informática Nonogasta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏅 OICen</h1>
+    <h2>Olimpiada Informática - Centro Educativo Nonogasta</h2>
+  </header>
+
+  <main>
+    <section id="tabla-container">
+      <table id="tabla-score">
+        <thead>
+          <tr>
+            <th>Ejercicio</th>
+            <th>Paola</th>
+            <th>Tiago</th>
+            <th>Patricio</th>
+            <th>Matías</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+      </table>
+    </section>
+
+    <section id="agregar-ejercicio">
+      <h3>➕ Agregar nuevo ejercicio</h3>
+      <input type="text" id="nombre-ej" placeholder="Nombre del ejercicio">
+      <input type="url" id="link-enunciado" placeholder="Link al enunciado">
+      <input type="url" id="link-kit" placeholder="Link al kit de códigos">
+      <button id="btn-agregar">Agregar</button>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
